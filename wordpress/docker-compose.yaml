@@ -16,6 +16,7 @@ services:
     working_dir: /app
     volumes:
       - ./cms:/app
+      - ./.docker/php/php.ini:/usr/local/etc/php/php.ini
     links:
       - db
 
